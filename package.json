@@ -1,0 +1,14 @@
+{
+    "name": "albumexperience",
+    "version": "0.1.0",
+    "dependencies": {
+        "montage" : "~0.12.2"
+    },
+    "directories": {
+        "lib": "lib/"
+    },
+    "bundle": [
+        "ui/main.reel"
+    ],
+    "shard": 4
+}

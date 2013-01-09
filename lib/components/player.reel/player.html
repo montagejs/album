@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+        <link rel="stylesheet" type="text/css" href="player.css">
+
+        <script type="text/montage-serialization">
+         {
+            "owner": {
+                "prototype": "components/player.reel",
+                "properties": {
+                    "element": {"#": "player"},
+                    "audioTag": {"#": "audio-tag"}
+                }
+            }
+        }
+         </script>
+
+    </head>
+
+    <body>
+
+        <div data-montage-id="player" class="player">
+            <audio data-montage-id="audio-tag" class="audio-tag"></audio>
+        </div>
+
+    </body>
+
+</html>
