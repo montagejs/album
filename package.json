@@ -2,7 +2,7 @@
     "name": "albumexperience",
     "version": "0.1.0",
     "dependencies": {
-        "montage" : "~0.12.2"
+        "montage" : "0.12.4"
     },
     "directories": {
         "lib": "lib/"
