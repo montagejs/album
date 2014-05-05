@@ -7,9 +7,15 @@
 
         <script type="text/montage-serialization">
         {
+            "owner": {
+                "prototype": "ui/home.reel",
+                "properties": {
+                    "element": {"#": "home"}
+                }
+            },
 
             "play": {
-                "prototype": "montage/ui/button.reel",
+                "prototype": "digit/ui/button.reel",
                 "properties": {
                     "element": {"#": "play-btn"},
                     "identifier": "playAlbum"
@@ -22,7 +28,7 @@
                 ]
             },
             "gallery": {
-                "prototype": "montage/ui/button.reel",
+                "prototype": "digit/ui/button.reel",
                 "properties": {
                     "element": {"#": "gallery-btn"},
                     "identifier": "goGallery"
@@ -35,7 +41,7 @@
                 ]
             },
             "songlist": {
-                "prototype": "montage/ui/button.reel",
+                "prototype": "digit/ui/button.reel",
                 "properties": {
                     "element": {"#": "songlist-btn"},
                     "identifier": "goSongList"
@@ -48,7 +54,7 @@
                 ]
             },
             "credits": {
-                "prototype": "montage/ui/button.reel",
+                "prototype": "digit/ui/button.reel",
                 "properties": {
                     "element": {"#": "credits-btn"},
                     "identifier": "goCredits"
@@ -59,12 +65,6 @@
                         "listener": {"@": "owner"}
                     }
                 ]
-            },
-            "owner": {
-                "prototype": "components/home.reel",
-                "properties": {
-                    "element": {"#": "home"}
-                }
             }
         }
          </script>

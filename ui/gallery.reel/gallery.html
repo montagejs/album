@@ -9,7 +9,7 @@
          {
 
             "arraycontroller": {
-                "prototype": "montage/ui/controller/array-controller",
+                "prototype": "montage/core/range-controller",
                 "properties": {
                     "selectObjectsOnAddition": true,
                     "automaticallyOrganizeObjects": true
@@ -135,16 +135,16 @@
                 }
             },
             "galleryimage": {
-                "prototype": "components/gallery.reel/image.reel",
+                "prototype": "ui/image.reel",
                 "properties": {
                     "element": {"#": "gallery-image"}
                 },
                 "bindings": {
-                    "src": {"<-": "@list.objectAtCurrentIteration.src"}
+                    "src": {"<-": "@list:iteration.object.src"}
                 }
             },
             "homebtn": {
-                "prototype": "montage/ui/button.reel",
+                "prototype": "digit/ui/button.reel",
                 "properties": {
                     "element": {"#": "home-btn"},
                     "identifier": "goBack"
@@ -157,7 +157,7 @@
                 ]
             },
             "owner": {
-                "module": "components/gallery.reel",
+                "module": "ui/gallery.reel",
                 "name": "Gallery",
                 "properties": {
                     "element": {"#": "gallery"},

@@ -1,0 +1,9 @@
+.montage-scroller {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.montage-scroller .content {
+    float: left;
+    width: 100%;
+}

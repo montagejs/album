@@ -1,17 +1,14 @@
 var Montage     = require("montage/core/core").Montage,
     Component   = require("montage/ui/component").Component;
 
-exports.Gallery = Montage.create( Component, {
+exports.Credits = Montage.create( Component, {
 
-    flow: {
-        serializable: true,
-        value: null
-    },
 
-    prepareForDraw: {
+
+    prepareForActivationEvents: {
         value: function(){
 
-            this.flow.scroll = 999999;
+                this.addEventListener("action", this);
 
         }
     },

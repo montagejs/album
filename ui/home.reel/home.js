@@ -3,12 +3,6 @@ var Montage     = require("montage/core/core").Montage,
 
 exports.Home = Montage.create( Component, {
 
-    prepareForDraw: {
-        value: function(){
-
-        }
-    },
-
     handleGoSongListAction: {
         value: function(event) {
 

@@ -14,7 +14,7 @@ exports.Player = Montage.create( Component, {
         serializable: true
     },
 
-    prepareForDraw: {
+    prepareForActivationEvents: {
         value: function(){
 
             this.eventManager.addEventListener( "playerPlaySong", this, false );

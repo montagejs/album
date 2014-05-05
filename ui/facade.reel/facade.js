@@ -1,7 +1,7 @@
 var Montage     = require("montage/core/core").Montage,
     Component   = require("montage/ui/component").Component;
 
-exports.Facade = Montage.create( Component, {
+exports.Facade = Component.specialize({
 
     iTunes: {
         value: false,
@@ -75,8 +75,8 @@ exports.Facade = Montage.create( Component, {
     },
 
 
-    prepareForDraw: {
-        value: function(){
+    enterDocument: {
+        value: function(firstTime){
 
             if( window.iTunes )
             {

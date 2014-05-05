@@ -48,7 +48,7 @@ body {
 }
 
 .bleed {
-  background: black url('../resources/images/interface/bleed.jpg') center center fixed no-repeat;
+  background: black url('../assets/images/interface/bleed.jpg') center center fixed no-repeat;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 150%;

@@ -9,7 +9,7 @@
          {
 
             "arraycontroller": {
-                "prototype": "montage/ui/controller/array-controller",
+                "prototype": "montage/core/range-controller",
                 "properties": {
                     "selectObjectsOnAddition": true,
                     "automaticallyOrganizeObjects": true
@@ -19,7 +19,7 @@
                 }
             },
             "list": {
-                "prototype": "montage/ui/list.reel",
+                "prototype": "digit/ui/list.reel",
                 "properties": {
                     "element": {
                         "#": "songs-container"
@@ -30,25 +30,25 @@
                 }
             },
              "dynamictext": {
-                 "prototype": "montage/ui/dynamic-text.reel",
+                 "prototype": "montage/ui/text.reel",
                  "properties": {
                      "element": {"#": "title"}
                  },
                  "bindings": {
-                     "value": {"<-": "@list.objectAtCurrentIteration.title"}
+                     "value": {"<-": "@list:iteration.object.title"}
                  }
              },
              "duration": {
-                 "prototype": "montage/ui/dynamic-text.reel",
+                 "prototype": "montage/ui/text.reel",
                  "properties": {
                      "element": {"#": "duration"}
                  },
                  "bindings": {
-                     "value": {"<-": "@list.objectAtCurrentIteration.duration"}
+                     "value": {"<-": "@list:iteration.object.duration"}
                  }
              },
             "homebtn": {
-                "prototype": "montage/ui/button.reel",
+                "prototype": "digit/ui/button.reel",
                 "properties": {
                     "element": {"#": "home-btn"},
                     "identifier": "goBack"
@@ -61,7 +61,7 @@
                 ]
             },
             "owner": {
-                "prototype": "components/songlist.reel",
+                "prototype": "ui/songlist.reel",
                 "properties": {
                     "element": {"#": "songlist"},
                     "buttonController": {"@": "arraycontroller"}

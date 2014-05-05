@@ -44,14 +44,6 @@ exports.Song = Montage.create( Component, {
         value: [ "song1", "song2", "song3", "song4", "song5", "song6", "song10", "song7", "song8", "song9"  ]
     },
 
-    prepareForDraw: {
-        value: function(){
-
-
-        }
-    },
-
-
     handleGoBackAction: {
         value: function(event) {
 
