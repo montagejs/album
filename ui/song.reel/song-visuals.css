@@ -2,6 +2,11 @@
 
 /* song visuals */
 
+.visualizer .inner,
+.visualizer .outer {
+    background-size: cover
+}
+
 /* song1 */
 
 .visualizer.song1 .outer {
