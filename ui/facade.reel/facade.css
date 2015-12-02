@@ -1,38 +1,43 @@
 /* @override http://localhost:8082/media-discovery/lp/ghost/lib/components/facade.reel/facade.css */
+
+
 .facade {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 1280px;
-  height: 700px;
-  margin-left: -640px;
-  margin-top: -350px;
-  overflow: hidden;
-  z-index: 1;
+  /*position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;*/
+  /*top: 50%;
+  left: 50%;*/
+/*  min-width: 1280px;
+  height: 700px;*/
+  /*margin-left: -640px;
+  margin-top: -350px;*/
+  /*overflow: hidden;
+  z-index: 1;*/
+  width:      100%;
+  max-width:  1280px;
+  height:     700px;
 }
 
 .facade-content {
-	position: absolute;
-  left: 0px;
-  top: 0px;
-	width:      1280px;
-  height:     700px;
-	overflow:   hidden;
-	background: transparent;
+	position: relative;
+  width:      100%;
+	height:     100%;
+  /*max-width:  1280px;*/
+  /*height:     700px;*/
+	/*overflow:   hidden;*/
 }
-
 
 
 @media only screen and (max-width: 1024px), only screen and (max-height: 768px) {
 
-    /* This is just a quick hack */
-
-    body {
-        overflow: hidden;
-    }
-
     .facade {
-        -webkit-transform: scale(.75) translate(-170px, -20px);
+        /*-webkit-transform: scale(.75) translate(-170px, -20px);*/
+        min-width: 768px;
+        height: 525px;
     }
 
 }
