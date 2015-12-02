@@ -5,6 +5,9 @@
     width:          100%;
     height:         100%;
     background-image: url('images/bg.jpg');
+    background-position:  -100px -30px;
+    background-size: 1380px;
+    background-repeat: no-repeat;
     opacity: 1;
     border-radius: 10px;
     -webkit-box-shadow: inset 0px 1px 1px hsla(0,0%,100%,.2),
@@ -17,9 +20,9 @@
     margin: 0;
     padding: 0;
     top: 40px;
+    bottom: 40px;
     right: 40px;
-    width: 600px;
-    height: 620px;
+    width: 40%;
     overflow: hidden;
     background: hsla(60,20%,80%,.2);
     z-index: 2;
@@ -33,13 +36,12 @@
     height: 100%;
 }
 
-
 .cover {
     position: absolute;
     width: 300px;
     height: 300px;
-    top: 170px;
-    left: 260px;
+    top: 25%;
+    left: 190px;
     border-radius: 12px;
     background-image: url('images/cover.jpg');
     -webkit-box-shadow: inset 0px 1px 1px hsla(0,0%,100%,.2),
@@ -66,8 +68,6 @@
     background: hsla(0,0%,100%,.5);
 }
 
-
-
 .song-button .title {
     font-size: 24px;
     padding: 0 30px;
@@ -79,5 +79,21 @@
 .song-button .title .duration {
     font-size: 20px;
     color: hsla(46,10%,30%,.9);
-    padding-left: 300px;
+    float: right;
+}
+
+@media screen and (max-width: 1024px) {
+    .songlist {
+        background-size: 1100px;
+        background-position: -140px -20px;
+    }
+
+    .cover {
+        width: 250px;
+        height: 250px;
+        top: 25%;
+        left: 90px;
+        background-size: cover;
+    }
+
 }

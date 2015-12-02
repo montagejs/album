@@ -57,28 +57,17 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0 2em;
+  overflow: hidden;
 }
 
 
 /* buttons */
 .buttons {
-    position: relative;
+    padding: 20px 10px;
+    position: absolute;
     width: 100%;
     z-index: 2;
 }
-/*.buttons > button {
-    position: absolute;
-     z-index: 2
-}*/
-/*.buttons > .home-btn {
-    left: 30px;
-    top: 40px;
-}*/
-
-/*.buttons > .resume-btn {
-    right: 30px;
-    top: 40px;
-}*/
 
 /* type */
 h3 {

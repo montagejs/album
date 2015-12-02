@@ -62,10 +62,21 @@ button.digit-Button {
     color: hsla(0,0%,5%,1);
     text-shadow: 0 1px 0 hsla(0,0%,100%,.3);
     background: transparent -webkit-radial-gradient(ellipse, hsla(0,0%,100%,.8), hsla(0,0%,100%,.3));
-    -webkit-box-shadow: inset 0px 3px 10px hsla(0,0%,100%,.7),
+    box-shadow: inset 0px 3px 10px hsla(0,0%,100%,.7),
                         inset 0px 18px 0px hsla(0,0%,100%,.12),
                         0px 2px 3px hsla(0,0%,0%,.5);
 }
+
+button.digit-Button:focus {
+    box-shadow: inset 0px 3px 10px hsla(0,0%,100%,.7),
+                        inset 0px 18px 0px hsla(0,0%,100%,.12),
+                        0px 2px 3px hsla(0,0%,0%,.5);
+}
+
+button.digit-Button:active {
+    box-shadow: inset 0 0 0 1px;
+}
+
 .dark button,
 button.dark {
     color: hsla(0,0%,95%,1);

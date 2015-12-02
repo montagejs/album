@@ -10,7 +10,7 @@
     text-align: center;
 }
 .song > .buttons > button {
-    /*position: static;*/
+    min-width: 110px;
 }
 
 

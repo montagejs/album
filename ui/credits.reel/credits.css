@@ -16,8 +16,8 @@
 
 .credits .credits-container {
     position: relative;
-    margin: 0px 40px 0 200px;
-    height: 600px;
+    margin: 30px 80px 0px 200px;
+    height: 550px;
     font-size: 17px;
     text-shadow: 0 1px 0 hsla(0,0%,100%,.3);
 }
@@ -34,7 +34,6 @@
 
 .credits-content > li {
     display: block;
-    margin-top: 40px;
 }
 
 .credits-content > li:nth-child(1) {
@@ -42,5 +41,18 @@
     padding-right: 60px;
 }
 .credits-content > li:nth-child(2) {
-    width: 400px;
+    width: 340px;
+}
+
+@media screen and (max-width: 1024px) {
+    .credits .credits-container {
+        position: relative;
+        margin: 30px 80px 0px 200px;
+        height: 408px;
+        font-size: 14px;
+    }
+
+    .credits-content > li:nth-child(2) {
+        width: 200px;
+    }
 }
