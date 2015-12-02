@@ -64,20 +64,21 @@ body {
 .buttons {
     position: relative;
     width: 100%;
+    z-index: 2;
 }
-.buttons > button {
+/*.buttons > button {
     position: absolute;
      z-index: 2
-}
-.buttons > .home-btn {
+}*/
+/*.buttons > .home-btn {
     left: 30px;
     top: 40px;
-}
+}*/
 
-.buttons > .resume-btn {
+/*.buttons > .resume-btn {
     right: 30px;
     top: 40px;
-}
+}*/
 
 /* type */
 h3 {
